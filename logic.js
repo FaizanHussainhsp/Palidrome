@@ -1,26 +1,26 @@
-// let inputfield = document.querySelector(".input");
-// let checkbtn = document.querySelector(".checkbtn");
-// let yesornot = document.querySelector(".yesornot");
-// let showdata = document.querySelector(".showdata");
+let inputfield = document.querySelector(".input");
+let checkbtn = document.querySelector(".checkbtn");
+let yesornot = document.querySelector(".yesornot");
+let showdata = document.querySelector(".showdata");
 
-// function checkpalindrome() {
-//   if (inputfield.value) {
-//     let originalStr = inputfield.value;
-//     let check = "";
-//     for (let index = originalStr.length - 1; index >= 0; index--) {
-//       check = check + originalStr[index];
-//     }
-//     if (originalStr === check) {
-//       yesornot.style.color = "green";
-//       yesornot.textContent = "yes it is palindrome";
-//     } else {
-//       yesornot.style.color = "red";
-//       yesornot.textContent = "NO it is not palindrome";
-//     }
-//   }
-// }
+function checkpalindrome() {
+  if (inputfield.value) {
+    let originalStr = inputfield.value;
+    let check = "";
+    for (let index = originalStr.length - 1; index >= 0; index--) {
+      check = check + originalStr[index];
+    }
+    if (originalStr === check) {
+      yesornot.style.color = "green";
+      yesornot.textContent = "yes it is palindrome";
+    } else {
+      yesornot.style.color = "red";
+      yesornot.textContent = "NO it is not palindrome";
+    }
+  }
+}
 
-// checkbtn.addEventListener("click", checkpalindrome);
+checkbtn.addEventListener("click", checkpalindrome);
 // let array = ["faizan", "ali"];
 // array.forEach((data) => (showdata.textContent = data));
 
